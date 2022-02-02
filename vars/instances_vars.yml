@@ -1,0 +1,21 @@
+---
+instances:
+  - name: server1
+    keypair: b262-keypair
+    image: rhel-8.3
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
+    security_group: b262-HostSG
+    internal_network: b262-dev-network
+    metadata:
+      AnsibleGroup: osp_instances
+      deployment_name: dev
+
+  - name: server2
+    keypair: b262-keypair
+    image: rhel-8.3
+    flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
+    security_group: b262-HostSG
+    internal_network: b262-dev-network
+    metadata:
+      AnsibleGroup: osp_instances
+      deployment_name: dev
